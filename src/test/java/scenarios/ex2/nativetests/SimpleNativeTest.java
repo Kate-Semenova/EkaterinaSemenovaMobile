@@ -1,4 +1,4 @@
-package scenarios.ex2.web;
+package scenarios.ex2.nativetests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;

@@ -10,11 +10,17 @@ import java.util.Properties;
 public class TestProperties {
     Properties currentProps = new Properties();
     public static String fileName;
+    public final static String testProperties = "test.properties";
 
     Properties getCurrentProps() throws IOException {
         FileInputStream in = new FileInputStream(fileName);
         currentProps.load(in);
+//        in = new FileInputStream(testProperties);
+        Properties testProps = new Properties();
+        testProps.load(TestProperties.class.getClassLoader().getResourceAsStream(testProperties));
         in.close();
+        currentProps.putAll(testProps);
+
         return currentProps;
     }
 
