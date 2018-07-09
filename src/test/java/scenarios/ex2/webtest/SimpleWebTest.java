@@ -23,6 +23,7 @@ public class SimpleWebTest extends Driver {
     @Test(description = "Open website")
     public void webTest() throws Exception {
         driver().get(SUT);
+        //check web Page title and url
         driverWait().until(ExpectedConditions.urlToBe(SUT + "/"));
         driverWait().until(ExpectedConditions.titleIs("Internet Assigned Numbers Authority"));
         System.out.println("Site opening done");
