@@ -13,11 +13,6 @@ import java.net.URL;
  * Created by Ekaterina on 09.07.2018.
  */
 public class Driver extends TestProperties {
-    //  protected AppiumDriver driver;
-    // protected DesiredCapabilities capabilities;
-    // protected WebDriverWait wait;
-
-    //protected AppiumDriver driver;
     private static AppiumDriver driverSingle = null;
     private static WebDriverWait waitSingle;
     protected DesiredCapabilities capabilities;
@@ -28,6 +23,7 @@ public class Driver extends TestProperties {
     protected String SUT; // site under testing
     protected String TEST_PLATFORM;
     protected String DRIVER;
+    protected String DEVICE;
 
     // Constructor initializes properties on driver creation
     protected Driver() throws IOException {
@@ -36,7 +32,7 @@ public class Driver extends TestProperties {
         SUT = t_sut == null ? null : "http://" + t_sut;
         TEST_PLATFORM = getProp("platform");
         DRIVER = getProp("driver");
-
+        DEVICE = getProp("device");
     }
 
     /**
@@ -51,7 +47,7 @@ public class Driver extends TestProperties {
         // Setup test platform: Android or iOS. Browser also depends on a platform.
         switch (TEST_PLATFORM) {
             case "Android":
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "9b4ff2c47cf3"); // default Android emulator
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE); // default Android emulator
                 browserName = "Chrome";
                 break;
             case "iOS":

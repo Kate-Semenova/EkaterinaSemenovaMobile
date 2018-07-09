@@ -15,7 +15,6 @@ public class TestProperties {
     Properties getCurrentProps() throws IOException {
         FileInputStream in = new FileInputStream(fileName);
         currentProps.load(in);
-//        in = new FileInputStream(testProperties);
         Properties testProps = new Properties();
         testProps.load(TestProperties.class.getClassLoader().getResourceAsStream(testProperties));
         in.close();
