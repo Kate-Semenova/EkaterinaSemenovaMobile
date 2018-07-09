@@ -1,0 +1,17 @@
+1.	Rewrite (complete) Driver using “singleton” pattern. Are there any advantages?
+
+2.	Suggest improvements for .properties reading. What are the purposes?
+
+    I have added static field to test classes
+
+3.	Add checks of other fields and their titles (Contact Name, Contact phone) in “native” test
+
+4.	Optional: Add keyboard presence check  in “native” test.
+    DONE
+5.	Which checks would you place in the “web” test?
+    Title
+    URL
+    Elements Presence
+6.	Implement checks for “web” test in code and try to use.
+
+
