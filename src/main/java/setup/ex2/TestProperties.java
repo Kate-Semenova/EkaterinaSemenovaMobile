@@ -9,8 +9,8 @@ import java.util.Properties;
  */
 public class TestProperties {
     Properties currentProps = new Properties();
-    public static String fileName;
-    public final static String testProperties = "test.properties";
+    protected static String fileName;
+    private final static String testProperties = "test.properties";
 
     Properties getCurrentProps() throws IOException {
         FileInputStream in = new FileInputStream(fileName);
