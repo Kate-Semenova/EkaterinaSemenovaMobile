@@ -2,7 +2,6 @@ package setup.ex3.site.po;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,9 +22,9 @@ public class IANAHomePage {
     private WebDriverWait webDriverWait;
     @FindBy(css = "#home-panels > div")
     private List<RemoteWebElement> homePanels;
-    @FindBy (css = "#gs_tti50 input")
+    @FindBy(css = "#gs_tti50 input")
     private RemoteWebElement searchInput;
-    @FindBy (css = ".gsc-search-button button")
+    @FindBy(css = ".gsc-search-button button")
     private RemoteWebElement searchButton;
 
     public IANAHomePage(AppiumDriver driver, String url, WebDriverWait webDriverWait) {
@@ -59,7 +58,8 @@ public class IANAHomePage {
     public void checkTitle() {
         webDriverWait.until(ExpectedConditions.titleIs(TITLE));
     }
-    public void searchForInfo(String text){
+
+    public void searchForInfo(String text) {
         searchInput.sendKeys(text);
         searchButton.click();
     }

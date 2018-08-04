@@ -1,4 +1,5 @@
 1.	Rewrite (complete) Driver using “singleton” pattern. Are there any advantages?
+    Мы не множим объекты, когда вызываем драйвер
 
 2.	Suggest improvements for .properties reading. What are the purposes?
 

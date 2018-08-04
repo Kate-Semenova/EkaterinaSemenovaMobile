@@ -20,7 +20,7 @@ Are there any difference with run on emulator?
 
 5.	What should be improved/changed in existing test code? Why, for what?
 
-    No hardcore values nor absalute path
+    No hardcore values nor absolute path
     Thread.sleep should be removed
     The project structure should be fixed
     These are not test cause they have no asserts
