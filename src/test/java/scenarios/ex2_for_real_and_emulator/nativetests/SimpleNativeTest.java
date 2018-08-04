@@ -1,14 +1,13 @@
-package scenarios.ex2.nativetests;
+package scenarios.ex2_for_real_and_emulator.nativetests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import setup.ex2.Driver;
+import setup.ex2.core.Driver;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -41,7 +40,7 @@ public class SimpleNativeTest extends Driver {
         By nameFieldTitle = By.id("Contact Name");
 
         Assert.assertTrue(driver().findElement(nameFieldTitle).getLocation().getY() <
-        driver().findElement(nameField).getLocation().getY());
+                driver().findElement(nameField).getLocation().getY());
 
         //Send keys ro Name Field and check he result
         driver().findElement(nameField).sendKeys("Mark");

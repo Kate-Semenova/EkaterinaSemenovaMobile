@@ -15,4 +15,6 @@
 
 6.	Implement checks for “web” test in code and try to use.
 
+MADE in ex3_for_farm
+
 

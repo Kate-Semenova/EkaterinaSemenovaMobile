@@ -1,9 +1,8 @@
-package scenarios.ex2.webtest;
+package scenarios.ex2_for_real_and_emulator.webtest;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
-import setup.ex2.Driver;
-import setup.ex2.TestProperties;
+import setup.ex2.core.Driver;
 
 import java.io.IOException;
 
@@ -13,9 +12,10 @@ import java.io.IOException;
 @Test(groups = "web")
 public class SimpleWebTest extends Driver {
 
-    static{
+    static {
         fileName = "src/main/resources/webtest.properties";
     }
+
     protected SimpleWebTest() throws IOException {
         super();
     }

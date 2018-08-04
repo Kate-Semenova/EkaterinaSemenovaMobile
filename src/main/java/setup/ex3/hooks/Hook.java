@@ -1,19 +1,19 @@
-package scenarios.ex2.hooks;
+package setup.ex3.hooks;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
-import setup.ex2.Driver;
+import setup.ex3.core.Driver;
 
 import java.io.IOException;
 
 /**
  * Created by Ekaterina on 09.07.2018.
  */
-@Test(groups = {"native","web"})
-public class Hook extends Driver{
+//@Test(groups = {"native","web"})
+public class Hook extends Driver {
     /**
      * Required variables will be initialized by inherited constructor
+     *
      * @throws IOException
      */
     Hook() throws IOException {

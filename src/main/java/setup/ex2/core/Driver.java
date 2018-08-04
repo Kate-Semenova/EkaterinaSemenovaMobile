@@ -1,4 +1,4 @@
-package setup.ex2;
+package setup.ex2.core;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -18,7 +18,7 @@ public class Driver extends TestProperties {
     protected DesiredCapabilities capabilities;
 
 
-    // Properties to be read
+    // PropertyFiles to be read
     protected String AUT; // (mobile) app under testing
     protected String SUT; // site under testing
     protected String TEST_PLATFORM;

@@ -17,15 +17,17 @@ public class FirstSimpleTest extends DriverSetup {
         prepareAndroidNative();
     }
     //@Test
+
     /**
      * This simple test just click on button 'Add contact'
      */
-    public void SimplestTest(){
+    public void SimplestTest() {
         String app_package_name = "com.example.android.contactmanager:id/";
         By add_btn = By.id(app_package_name + "addContactButton");
         driver.findElement(add_btn).click();
         System.out.println("Simplest Appium test done");
     }
+
     @Test(description = "Open website")
     public void webTest() throws InterruptedException {
         driver.get("http://iana.org");
@@ -33,7 +35,7 @@ public class FirstSimpleTest extends DriverSetup {
         System.out.println("Site opening done");
     }
 
-    @AfterClass (description = "Close driver on all tests completion" )
+    @AfterClass(description = "Close driver on all tests completion")
     /**
      * Close driver on all tests completion
      */

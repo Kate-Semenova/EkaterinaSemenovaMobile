@@ -13,7 +13,7 @@ import java.net.URL;
 public class DriverSetup {
     protected AndroidDriver driver;
 
-    protected final static String REAL_DEVICE ="9b4ff2c47cf3";
+    protected final static String REAL_DEVICE = "9b4ff2c47cf3";
     protected final static String EMULATOR = "emulator-5554";
 
     protected void prepareAndroidNative() throws MalformedURLException { // exception required by java.net.URL
