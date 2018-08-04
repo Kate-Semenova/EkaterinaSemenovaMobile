@@ -11,14 +11,14 @@ import java.io.IOException;
  */
 @Test(groups = "web")
 public class SimpleWebTest extends Driver {
-
+    private IANAHomePage ianaHomePage;
     protected SimpleWebTest() throws IOException {
         super();
     }
 
     @Test(description = "Open website")
     public void webTest() throws Exception {
-        IANAHomePage ianaHomePage = new IANAHomePage(driver(), SUT, driverWait());
+        ianaHomePage = new IANAHomePage(driver(), SUT, driverWait());
         ianaHomePage.open();
 
         //check web Page title and url
